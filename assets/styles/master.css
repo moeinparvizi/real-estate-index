@@ -56,7 +56,7 @@ header nav > ul > li {
 header nav > ul > li:last-child {
   margin-right: 20px;
   background-color: #baff00;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 header nav > ul > li > a {
@@ -64,7 +64,7 @@ header nav > ul > li > a {
   color: #fff;
   padding: 10px;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 header nav > ul > li > a::before {
@@ -184,7 +184,7 @@ header > div > :nth-of-type(2) > div > div > h1 {
   color: #fff;
   padding: 0 20px;
 }
-header > div > :nth-of-type(2) > div > div > .but {
+header > div > :nth-of-type(2) > div > div > a {
   border: 5px solid #fff;
   font-size: 2rem;
   font-weight: bold;
@@ -195,7 +195,7 @@ header > div > :nth-of-type(2) > div > div > .but {
   position: relative;
   transition: 0.4s;
 }
-header > div > :nth-of-type(2) > div > div > .but::after, header > div > :nth-of-type(2) > div > div > .but::before {
+header > div > :nth-of-type(2) > div > div > a::after, header > div > :nth-of-type(2) > div > div > a::before {
   content: "";
   height: 5px;
   width: 12%;
@@ -209,17 +209,17 @@ header > div > :nth-of-type(2) > div > div > .but::after, header > div > :nth-of
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
 }
-header > div > :nth-of-type(2) > div > div > .but::before {
+header > div > :nth-of-type(2) > div > div > a::before {
   top: 85%;
 }
-header > div > :nth-of-type(2) > div > div > .but:hover::before {
+header > div > :nth-of-type(2) > div > div > a:hover::before {
   background-color: #baff00;
   height: 2px;
 }
-header > div > :nth-of-type(2) > div > div > .but:hover::after {
+header > div > :nth-of-type(2) > div > div > a:hover::after {
   left: 5000px;
 }
-header > div > :nth-of-type(2) > div > div > .but:hover {
+header > div > :nth-of-type(2) > div > div > a:hover {
   color: #baff00;
   border: 2px solid #baff00;
   font-size: 2.1rem;
@@ -285,10 +285,99 @@ header > div > :nth-of-type(3) > div span:nth-of-type(2) {
   font-weight: bold;
 }
 
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
 .studio {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  margin: 100px auto;
+  width: 70%;
+}
+.studio > * {
+  padding: 20px;
+}
+.studio > div > * {
+  padding: 20px;
+}
+.studio > div > h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.studio > div > h2 > strong {
+  background-color: #baff00;
+  padding: 5px;
+}
+.studio > div > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.studio > div > a {
+  border: 5px solid #000;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  color: #000;
+  position: relative;
+  transition: 0.4s;
+  margin: 0 20px;
+}
+.studio > div > a::after, .studio > div > a::before {
+  content: "";
+  height: 5px;
+  width: 12%;
+  background-color: #000;
+  position: absolute;
+  top: 75%;
+  left: 96%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.studio > div > a::before {
+  top: 85%;
+}
+.studio > div > a:hover::before {
+  background-color: #000;
+  height: 2px;
+}
+.studio > div > a:hover::after {
+  left: 5000px;
+}
+.studio > div > a:hover {
+  color: #000;
+  border: 2px solid #000;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.studio figure {
+  width: 100%;
 }
 
 /*# sourceMappingURL=master.css.map */

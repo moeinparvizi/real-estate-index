@@ -1,5 +1,11 @@
 @import "global";
 
+header>nav,
+header>nav>ul,
+header>nav>ul>li,
+header>nav>ul>li>a {
+    @include flex-center(0);
+}
 header {
     height: auto;
     background: url(../media/images/bg.jpg);
@@ -24,7 +30,7 @@ header {
                 &:last-child {
                     margin-right: 20px;
                     background-color: $yellow;
-                    @include font-bold(1.6);
+                    @include font-bold(2.1);
                 }
 
                 >a {
@@ -32,7 +38,7 @@ header {
                     color: $bg;
                     padding: 10px;
                     text-transform: uppercase;
-                    @include font-bold(1.4);
+                    @include font-bold(1.8);
 
                     &::before {
                         content: '';
@@ -156,48 +162,8 @@ header {
                         color: $bg;
                         padding: 0 20px;
                     }
-                    >.but{
-                        border: 5px solid $bg;
-                        @include font-bold(2);
-                        padding: 20px 40px;
-                        margin-left: 5%;
-                        margin-bottom: 20px;
-                        color: $bg;
-                        position: relative;
-                        transition: .4s;
-
-                        &::after,
-                        &::before{
-                            content: '';
-                            height: 5px;
-                            width: 12%;
-                            background-color: $bg;
-                            position: absolute;
-                            top: 75%;
-                            left: 96%;
-                            transition: .4s;
-                            -webkit-transition: .4s;
-                            -moz-transition: .4s;
-                            -ms-transition: .4s;
-                            -o-transition: .4s;
-                        }
-
-                        &::before{
-                            top: 85%;
-                        }
-
-                        &:hover::before{
-                            background-color: $yellow;
-                            height: 2px;
-                        }
-                        &:hover::after{
-                            left: 5000px;
-                        }
-                        &:hover{
-                            color: $yellow;
-                            border: 2px solid $yellow;
-                            @include font-bold(2.1)
-                        }
+                    >a {
+                        @include button-flavore($bg,$yellow);
                     }
                 }
             }

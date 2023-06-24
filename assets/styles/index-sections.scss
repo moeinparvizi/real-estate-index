@@ -1,5 +1,35 @@
+@import 'global';
+
 .studio{
-    border:1px solid red;
     display: flex;
     justify-content: center;
+    margin: 100px auto;
+    width: 70%;
+    >*{
+        padding: 20px;
+    }
+    >div{
+        &>*{
+            padding: 20px;
+        }
+        >h2{
+            @include font-bold(6);
+            >strong{
+                background-color: $yellow;
+                padding: 5px;
+            }
+        }
+        >p{
+            @include font-bold(1.6);
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        >a{
+            @include button-flavore($black,$black);
+            margin: 0 20px;
+        }
+    }
+    figure{
+        width: 100%;
+    }
 }

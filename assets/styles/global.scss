@@ -43,14 +43,53 @@ a {
     }
 }
 
+@mixin button-flavore($bef, $af) {
+    border: 5px solid $bef;
+    @include font-bold(2);
+    padding: 20px 40px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    color: $bef;
+    position: relative;
+    transition: .4s;
+
+    &::after,
+    &::before {
+        content: '';
+        height: 5px;
+        width: 12%;
+        background-color: $bef;
+        position: absolute;
+        top: 75%;
+        left: 96%;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    &::before {
+        top: 85%;
+    }
+
+    &:hover::before {
+        background-color: $af;
+        height: 2px;
+    }
+
+    &:hover::after {
+        left: 5000px;
+    }
+
+    &:hover {
+        color: $af;
+        border: 2px solid $af;
+        @include font-bold(2.1)
+    }
+}
+
 body {
     background-color: $bg;
     font-family: 'Lato', sans-serif;
-}
-
-header>nav,
-header>nav>ul,
-header>nav>ul>li,
-header>nav>ul>li>a {
-    @include flex-center(0);
 }
