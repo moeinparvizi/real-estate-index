@@ -157,6 +157,9 @@
             @include titleSections;
             color: $bg;
             width: 70%;
+            >strong{
+                color: $black;
+            }
         }
 
         >p {
@@ -174,7 +177,41 @@
             }
         }
     }
+}
 
+.numbers{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 150px 200px;
+    div{
+        display: flex;
+        position: relative;
+        &:hover span{
+            background-color: $yellow;
+        }
+        >span{
+            width: 100px;
+            height: 100px;
+            background-color: $grayBg;
+            transition: .4s;
+        }
+        >p:nth-of-type(1){
+            @include font-bold(4);
+            color: $black;
+            position: absolute;
+            top: 30%;
+            left: 80%;
+        }
+        >p:nth-of-type(2){
+            @include font-bold(2);
+            color: $grayText;
+            position: absolute;
+            top: 40%;
+            left: 130%;
+        }
+    }
 }
 
 .projects {

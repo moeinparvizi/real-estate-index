@@ -501,6 +501,9 @@ body {
   background-color: #baff00;
   padding: 5px;
 }
+.home > div > h3 > strong {
+  color: #000;
+}
 .home > div > p {
   font-size: 2rem;
   font-weight: bold;
@@ -513,6 +516,43 @@ body {
 .home > div > figure > * {
   padding: 20px;
   width: 90px;
+}
+
+.numbers {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 150px 200px;
+}
+.numbers div {
+  display: flex;
+  position: relative;
+}
+.numbers div:hover span {
+  background-color: #baff00;
+}
+.numbers div > span {
+  width: 100px;
+  height: 100px;
+  background-color: #727272;
+  transition: 0.4s;
+}
+.numbers div > p:nth-of-type(1) {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+}
+.numbers div > p:nth-of-type(2) {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  top: 40%;
+  left: 130%;
 }
 
 .projects {
