@@ -465,7 +465,6 @@ body {
 .home {
   display: flex;
   height: 700px;
-  border: 1px solid red;
   width: 100%;
   margin-top: 50px;
   position: relative;
@@ -479,7 +478,6 @@ body {
   top: 10%;
   right: 50%;
   width: 50%;
-  border: 1px solid yellow;
 }
 .home > div {
   bottom: 20%;
@@ -488,7 +486,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid green;
 }
 .home > div > * {
   padding: 20px;
@@ -516,6 +513,161 @@ body {
 .home > div > figure > * {
   padding: 20px;
   width: 90px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 100%;
+}
+.projects > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+.projects > div:nth-of-type(1) > h3 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.projects > div:nth-of-type(1) > h3 > strong {
+  background-color: #baff00;
+  padding: 5px;
+}
+.projects > div:nth-of-type(1) > ul {
+  display: flex;
+  align-items: center;
+}
+.projects > div:nth-of-type(1) > ul > li {
+  text-transform: capitalize;
+  padding-left: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.3;
+}
+.projects > div:nth-of-type(1) > ul > li:hover a {
+  color: #000;
+}
+.projects > div:nth-of-type(1) > ul > li > a {
+  color: #333;
+}
+.projects > div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
+}
+.projects > div:nth-of-type(2) > figure {
+  width: 25%;
+  margin: 20px;
+  position: relative;
+}
+.projects > div:nth-of-type(2) > figure > img {
+  background-image: cover;
+  width: 100%;
+  height: 100%;
+}
+.projects > div:nth-of-type(2) > figure > figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.projects > div:nth-of-type(2) > figure > figcaption::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.projects > div:nth-of-type(2) > figure > figcaption:hover::after {
+  opacity: 0.6;
+  visibility: visible;
+}
+.projects > div:nth-of-type(2) > figure > figcaption:hover h5 {
+  bottom: 70%;
+  opacity: 1;
+  background-color: transparent;
+}
+.projects > div:nth-of-type(2) > figure > figcaption:hover p {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60%;
+}
+.projects > div:nth-of-type(2) > figure > figcaption:hover a {
+  visibility: visible;
+  opacity: 1;
+  top: 75%;
+}
+.projects > div:nth-of-type(2) > figure > figcaption > div {
+  padding: 30px;
+}
+.projects > div:nth-of-type(2) > figure > figcaption > div > h5 {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  bottom: 50%;
+  color: #fff;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.7;
+  transition: 1s;
+}
+.projects > div:nth-of-type(2) > figure > figcaption > div > p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #baff00;
+  position: absolute;
+  bottom: 40%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.projects > div:nth-of-type(2) > figure > figcaption > a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #baff00;
+  color: #000;
+  padding: 5px;
+  margin: 40px;
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.projects > div:nth-of-type(3) {
+  display: flex;
+  padding: 20px;
+  justify-content: end;
+}
+.projects > div:nth-of-type(3) > a {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+.projects > div:nth-of-type(3) > a:hover {
+  background-color: #baff00;
 }
 
 /*# sourceMappingURL=master.css.map */
