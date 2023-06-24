@@ -1,0 +1,56 @@
+$black : #000;
+$grayText : #333;
+$darkBg: #222;
+$darkBlue: #172530;
+$bg: #fff;
+$grayBg: #727272;
+$yellow: #baff00;
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin flex-center($content) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @if ($content==1) {
+        align-content: center;
+    }
+}
+
+@mixin font-bold($rem) {
+    font-size: $rem+#{rem};
+
+    @if ($rem >=1.4) {
+        font-weight: bold;
+    }
+}
+
+body {
+    background-color: $bg;
+    font-family: 'Lato', sans-serif;
+}
+
+header>nav,
+header>nav>ul,
+header>nav>ul>li,
+header>nav>ul>li>a {
+    @include flex-center(0);
+}
