@@ -6,6 +6,7 @@ header>nav>ul>li,
 header>nav>ul>li>a {
     @include flex-center(0);
 }
+
 header {
     height: auto;
     background: url(../media/images/bg.jpg);
@@ -35,7 +36,7 @@ header {
 
                 >a {
                     text-decoration: none;
-                    color: $bg;
+                    color: $bg !important;
                     padding: 10px;
                     text-transform: uppercase;
                     @include font-bold(1.8);
@@ -93,6 +94,7 @@ header {
                         -moz-transition: .3s;
                         -ms-transition: .3s;
                         -o-transition: .3s;
+
                         &:hover {
                             color: $bg;
                         }
@@ -135,6 +137,7 @@ header {
                         width: 200%;
                         height: 20%;
                     }
+
                     &::after {
                         content: '';
                         background-color: $yellow;
@@ -146,7 +149,7 @@ header {
                     }
                 }
 
-                >div{
+                >div {
                     position: absolute;
                     top: 20%;
                     left: 25%;
@@ -157,34 +160,41 @@ header {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: start;
-                    >h1{
+
+                    >h1 {
                         @include font-bold(7);
                         color: $bg;
                         padding: 0 20px;
                     }
+
                     >a {
-                        @include button-flavore($bg,$yellow);
+                        @include button-flavore($bg, $yellow);
                     }
                 }
             }
-            >a{
+
+            >a {
                 @include font-bold(2);
                 position: absolute;
                 top: 110%;
                 color: $bg;
                 transition: .3s;
-                &:hover{
+
+                &:hover {
                     color: $yellow;
                 }
-                &:nth-of-type(2){
+
+                &:nth-of-type(2) {
                     left: 0;
                 }
-                &:nth-of-type(1){
+
+                &:nth-of-type(1) {
                     left: 15%;
                 }
             }
         }
-        > :nth-of-type(3){
+
+        > :nth-of-type(3) {
             width: 300px;
             padding: 50px;
             position: relative;
@@ -192,7 +202,8 @@ header {
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
-            >p{
+
+            >p {
                 color: $bg;
                 letter-spacing: 20px;
                 transform: rotate(-90deg);
@@ -202,7 +213,8 @@ header {
                 position: absolute;
                 left: -12%;
             }
-            >div{
+
+            >div {
                 background-color: $black;
                 height: 25%;
                 width: 150px;
@@ -214,11 +226,12 @@ header {
                 opacity: .9;
                 justify-content: center;
 
-                span:nth-of-type(1){
+                span:nth-of-type(1) {
                     color: $yellow;
                     @include font-bold(5);
                 }
-                span:nth-of-type(2){
+
+                span:nth-of-type(2) {
                     color: $bg;
                     @include font-bold(2);
                 }
@@ -229,3 +242,57 @@ header {
 
 @import "index-sections";
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    @include font-bold(2);
+    position: relative;
+    border-top: 1px solid $grayBg;
+
+    >div:nth-of-type(1) {
+        a {
+            color: purple;
+        }
+    }
+
+    >div:nth-of-type(2),
+    >div:nth-of-type(3),
+    >div:nth-of-type(4) {
+        a {
+
+            color: $black;
+            transition: .4s;
+
+        }
+
+        li:hover a {
+            background-color: $yellow;
+            padding: 5px;
+        }
+    }
+
+    >div:nth-of-type(4) {
+        margin-right: 200px;
+    }
+
+    >div:nth-of-type(5) {
+        background-color: $black;
+        position: absolute;
+        top: -30%;
+        left: 90%;
+
+        li {
+            padding: 15px;
+            &:hover a{
+                color: $yellow;
+            }
+            a {
+                color: $grayText;
+                transition: .4s;
+            }
+        }
+
+    }
+}
