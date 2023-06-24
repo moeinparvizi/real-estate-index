@@ -89,7 +89,17 @@ a {
     }
 }
 
-body {
-    background-color: $bg;
-    font-family: 'Lato', sans-serif;
+@mixin titleSections {
+    @include font-bold(6);
+    text-transform: capitalize;
+
+    >strong {
+        background-color: $yellow;
+        padding: 5px;
+    }
 }
+
+    body {
+        background-color: $bg;
+        font-family: 'Lato', sans-serif;
+    }
