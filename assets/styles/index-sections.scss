@@ -337,7 +337,7 @@
                         z-index: 2;
                         visibility: hidden;
                         opacity: 0;
-                        transition: 1s;
+                        transition: 1.5s;
                     }
                 }
 
@@ -355,7 +355,7 @@
                     z-index: 2;
                     visibility: hidden;
                     opacity: 0;
-                    transition: 1s;
+                    transition: 2s;
                 }
             }
         }
@@ -378,5 +378,21 @@
             }
         }
     }
+}
 
+.comp{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    >figure{
+        width: 25%;
+        text-align: center;
+        opacity: .5;
+        transition: .4s;
+        &:hover{
+            opacity: 1;
+        }
+    }
 }

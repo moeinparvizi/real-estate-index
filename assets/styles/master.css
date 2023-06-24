@@ -674,7 +674,7 @@ body {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
 }
 .projects > div:nth-of-type(2) > figure > figcaption > a {
   font-size: 1.4rem;
@@ -691,7 +691,7 @@ body {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 .projects > div:nth-of-type(3) {
   display: flex;
@@ -708,6 +708,22 @@ body {
 }
 .projects > div:nth-of-type(3) > a:hover {
   background-color: #baff00;
+}
+
+.comp {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.comp > figure {
+  width: 25%;
+  text-align: center;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.comp > figure:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=master.css.map */
