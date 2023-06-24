@@ -113,11 +113,61 @@
                 visibility: hidden;
                 opacity: 0;
             }
-            &:hover>a{
+
+            &:hover>a {
                 letter-spacing: 3px;
                 background-color: $yellow;
             }
-
         }
     }
+}
+
+.home {
+    display: flex;
+    height: 700px;
+    border:1px solid red;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    >figure,
+    >div{
+        position: absolute;
+        height: 80%;
+    }
+    >figure{
+        top: 10%;
+        right: 50%;
+        width: 50%;
+        border: 1px solid yellow;
+    }
+    >div{
+        bottom: 20%;
+        left: 40%;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px solid green;
+        >*{
+            padding: 20px;
+        }
+        >h3{
+            @include titleSections;
+            color: $bg;
+            width: 70%;
+        }
+        >p{
+            @include font-bold(2);
+            color: $bg;
+            width: 60%;
+        }
+        >figure{
+            display: flex;
+            >*{
+                padding: 20px;
+                width: 90px;
+            }
+        }
+    }
+
 }

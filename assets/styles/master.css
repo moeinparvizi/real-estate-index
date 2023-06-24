@@ -462,4 +462,60 @@ body {
   background-color: #baff00;
 }
 
+.home {
+  display: flex;
+  height: 700px;
+  border: 1px solid red;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+.home > figure,
+.home > div {
+  position: absolute;
+  height: 80%;
+}
+.home > figure {
+  top: 10%;
+  right: 50%;
+  width: 50%;
+  border: 1px solid yellow;
+}
+.home > div {
+  bottom: 20%;
+  left: 40%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid green;
+}
+.home > div > * {
+  padding: 20px;
+}
+.home > div > h3 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  width: 70%;
+}
+.home > div > h3 > strong {
+  background-color: #baff00;
+  padding: 5px;
+}
+.home > div > p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  width: 60%;
+}
+.home > div > figure {
+  display: flex;
+}
+.home > div > figure > * {
+  padding: 20px;
+  width: 90px;
+}
+
 /*# sourceMappingURL=master.css.map */
