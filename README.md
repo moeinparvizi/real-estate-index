@@ -67,7 +67,13 @@ moein parvizi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![1](https://github.com/moeinparvizi/real-estate-index/assets/38692466/2e640503-5cc0-44ae-aa3a-7b28206f31c5)
+![2](https://github.com/moeinparvizi/real-estate-index/assets/38692466/13ea2233-e33d-49b3-9dc7-45f8ff035d5e)
+![3](https://github.com/moeinparvizi/real-estate-index/assets/38692466/96c6f95a-8a4e-4888-9de1-b9cfe9e50707)
+![4](https://github.com/moeinparvizi/real-estate-index/assets/38692466/3e8cf7bf-e932-4832-8f99-3fa56f3f0ffe)
+![5](https://github.com/moeinparvizi/real-estate-index/assets/38692466/540c3e9f-891c-493f-9448-c660060f8576)
+![6](https://github.com/moeinparvizi/real-estate-index/assets/38692466/645a6539-fc49-4a6b-b5cd-e3de76b73730)
+
 
 we have a website for real estate.
 you can see any informaition about this project in under.
