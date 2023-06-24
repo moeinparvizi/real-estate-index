@@ -7,7 +7,7 @@
 <!--
 moein parvizi
 -->
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -19,9 +19,6 @@ moein parvizi
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">real-estate-index</h3>
 
@@ -31,7 +28,7 @@ moein parvizi
     <a href="https://github.com/moeinparvizi/real-estate-index"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/moeinparvizi/real-estate-index">View Demo</a>
+    <a href="https://moeinparvizi.github.io/real-estate-index/">View Demo</a>
     ·
     <a href="https://github.com/moeinparvizi/real-estate-index/issues">Report Bug</a>
     ·
